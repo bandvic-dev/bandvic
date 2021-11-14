@@ -1,2 +1,2 @@
 # bandvic
-my personal page
+Hi, my name is Andrei. I'm Front-end Developer. It's my personal page on GitHub.
