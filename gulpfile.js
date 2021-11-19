@@ -8,7 +8,7 @@ const sass = require('gulp-sass')(require('sass'));
 const image = require('gulp-image');
 let browserSync = require('browser-sync').create();
 
-const distFolder = 'dist/'
+const distFolder = 'docs/'
 
 gulp.task('sass', () => {
     return gulp.src('src/**/*.scss')
