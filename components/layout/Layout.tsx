@@ -2,13 +2,15 @@
 /* eslint-disable @next/next/inline-script-id */
 /* eslint-disable @next/next/next-script-for-ga */
 /* eslint-disable @next/next/no-page-custom-font */
-import type { NextPage } from 'next'
 import Head from 'next/head'
-import Script from 'next/script'
 import Footer from './Footer'
 import Header from './Header'
 
-export function Layout({children}): JSX.Element {
+type Props = {
+    children: JSX.Element,
+  };
+
+export function Layout({ children }: Props) {
   
     return (<>
         <Head>
