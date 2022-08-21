@@ -15,7 +15,7 @@ const Home: NextPage = () => {
         <div className="card-wrapper">
           <div className="card">
             <div className="card__image">
-              <Image src="/images/avatar.jpg" width="300" height="300" alt="Avatar image"/>
+              <Image src="/images/avatar-250x250.jpg" width="300" height="300" alt="Avatar image"/>
             </div>
             <div className="card__content">
               <h1 className="card__title">Andrei Balanco</h1>

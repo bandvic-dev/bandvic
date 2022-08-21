@@ -4,6 +4,12 @@
     }
 }
 
+@mixin min-media-width($size) {
+    @media screen and (min-width: #{$size}px) {
+        @content;
+    }
+}
+
 @mixin h1-title() {
     font-size: 4em;
     line-height: 1em;
