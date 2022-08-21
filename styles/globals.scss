@@ -11,6 +11,11 @@ body {
   font-display: swap;
 }
 
+body {
+  color: white;
+  background: black;
+}
+
 a {
   color: $blue;
   text-decoration: none;
@@ -19,50 +24,64 @@ a {
   }
 }
 
+p {
+  margin: 16px 0;
+  font-family: 400;
+}
+
 * {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
-  html {
-    color-scheme: dark;
-  }
-  body {
-    color: white;
-    background: black;
-  }
-}
-
 .container {
-  max-width: 1280px;
+  max-width: 1199px;
   width: 100%;
   margin: 0 auto;
-  padding: 0 16px;
-  @include min-media-width($md) {
-    padding: 0 40px;
+  padding: 0 40px;
+  @include max-media-width($md) {
+    padding: 0 16px;
   }
 }
 
 .header {
   display: flex;
   align-items: center;
-  padding: 16px 0;
-  height: 100px;
-  width: 100%;
+  background: $black;
   border-bottom: 1px solid $blue;
+  width: 100%;
+  height: $header-height;
+  padding: 16px 0;
+
+  @include max-media-width($md) {
+    height: $header-height-md;
+  }
 }
+
 main {
-  height: calc(100vh - 200px - 2em);
-  min-height: 400px;
+  background: url("https://uconn-today-universityofconn.netdna-ssl.com/wp-content/uploads/2018/04/GettyImages-676434248-network_cropped.jpg") center/cover;
+  min-height: $dynamic-full-height;
+  // height: 400px;
   padding: 20px 0;
+  @include max-media-width($md) {
+    min-height: $dynamic-full-height-md;
+  }
 }
+
 .footer {
+  border-top: 1px solid $blue;
+  background: $black;
   display: flex;
   align-items: center;
   padding: 16px 0;
-  height: 100px;
   width: 100%;
-  border-top: 1px solid $blue;
+  height: $footer-height;
+
+  @include max-media-width($md) {
+    height: $header-height-md;
+  }
+  &__copyright-text {
+    color: $blue-dark;
+  }
 }
 
 .navbar {
@@ -76,9 +95,14 @@ main {
   display: flex;
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin: 0 -16px;
+  @include max-media-width($md) {
+    margin: 0 -8px;
+  }
   &__item {
     padding: 0 16px;
+    @include max-media-width($md) {
+      padding: 0 8px;
+    }
   }
-  &__link {}
 }

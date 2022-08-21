@@ -1,5 +1,58 @@
-@mixin min-media-width($size) {
-    @media screen and (min-width: #{$size}px) {
+@mixin max-media-width($size) {
+    @media screen and (max-width: #{$size}px) {
         @content;
     }
+}
+
+@mixin h1-title() {
+    font-size: 4em;
+    line-height: 1em;
+    font-weight: 700;
+    margin: 0;
+    @include max-media-width($lg) {
+        font-size: 3em;
+    }
+    @include max-media-width($md) {
+        font-size: 2em;
+    }
+    @content;
+}
+
+@mixin h2-title() {
+    margin: 0;
+    font-size: 3em;
+    line-height: 1em;
+    font-weight: 700;
+    @include max-media-width($lg) {
+        font-size: 2em;
+    }
+    @include max-media-width($md) {
+        font-size: 1em;
+    }
+    @content;
+}
+
+@mixin h3-title() {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 700;
+    @include max-media-width($lg) {
+        font-size: 2em;
+    }
+    @include max-media-width($md) {
+        font-size: 1em;
+    }
+    @content;
+}
+
+@mixin h4-title() {
+    margin: 0;
+    font-size: 2em;
+    line-height: 1em;
+    font-weight: 700;
+    @include max-media-width($md) {
+        font-size: 2em;
+    }
+    @content;
 }

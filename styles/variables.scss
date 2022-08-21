@@ -1,10 +1,21 @@
-$blue: #0070f3;
+$blue: #03a9f4;
+$blue-dark: #016F9F;
+$white: #ffffff;
+$black: #000000;
 
 $sm: 576;
-$md: 768;
+$md: 767;
 $lg: 992;
 $xl: 1200;
 $xxl: 1400;
+
+$header-height: 100px;
+$footer-height: 100px;
+$header-height-md: 60px;
+$footer-height-md: 60px;
+$main-gap: 20px;
+$dynamic-full-height: calc(100vh - $header-height - $footer-height);
+$dynamic-full-height-md: calc(100vh - $header-height-md - $footer-height-md);
 
 
 
