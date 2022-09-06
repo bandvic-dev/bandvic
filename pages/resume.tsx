@@ -9,7 +9,7 @@ export function Resume(props: NextPage) {
   return (
     <>
       <Head>
-        <title>Resume</title>
+        <title>Andrei Balanco | Resume Page</title>
         <meta name="description" content="My actual CV" />
       </Head>
       <Layout>

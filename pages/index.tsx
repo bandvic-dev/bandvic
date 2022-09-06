@@ -7,7 +7,7 @@ import Socials from '../components/modules/Socials'
 const Home: NextPage = () => {
   return (<>
     <Head>
-      <title>Home</title>
+      <title>Andrei Balanco | Home Page</title>
       <meta name="description" content="Personal webpage about my skill performance" />
     </Head>
     <Layout>
