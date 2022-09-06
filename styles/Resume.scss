@@ -1,0 +1,119 @@
+@import "./variables";
+@import "./mixins";
+
+@include h1-title;
+@include h2-title;
+@include h3-title;
+@include h4-title;
+@include h5-title;
+@include h6-title;
+@include text;
+@include list;
+
+.resume {
+  &-row {
+    display: flex;
+    min-height: calc(100vh - $header-height - $footer-height - $main-gap * 2 - 4px);
+    @include max-media-width($md) {
+      flex-direction: column;
+    }
+    .socials {
+      display: flex;
+      justify-content: center;
+      margin-top: 40px;
+    }
+  }
+  &-sidebar {
+    width: 320px;
+    padding: 40px;
+    @include glass(rgba($blue, .9), blur(250px));
+    @include max-media-width($md) {
+      width: 100%;
+      padding: 40px 20px;
+    }
+  }
+  &-avatar {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    z-index: 3;
+    &__image {
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      overflow: hidden;
+      margin: 0 0 2em;
+      border: border(4px);
+      img {
+        transform: scale3d(1, 1, 1);
+        transition: all .5s ease;
+      }
+      &:hover {
+        img {
+          transform: scale3d(1.1, 1.1, 1.1);
+          transition: all .5s ease;
+        }
+      }
+    }
+    &__name {
+      font-size: 2em;
+      padding: 0;
+      margin: 0 0 0.25em;
+      text-align: center;
+    }
+    &__position {
+      font-size: 1em;
+      padding: 0;
+      margin: 0;
+      text-align: center;
+    }
+    &__info {
+      margin-bottom: 1.5em;
+      width: 100%;
+    }
+  }
+  &-contact {
+    position: relative;
+    z-index: 3;
+    margin-bottom: 1.5em;
+    &__item {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      &:not(:first-child) {
+        margin-top: 8px;
+      }
+      strong {
+        color: $blue-lite;
+      }
+      a {
+        color: $white;
+        text-decoration: underline;
+        &:hover {
+          color: $blue;
+        }
+      }
+    }
+  }
+  &-aditional-info {
+    position: relative;
+    z-index: 3;
+    &__item {
+      text-align: center;
+    }
+  }
+  &-content {
+    flex: 1;
+    &-block {
+      position: relative;
+      z-index: 3;
+      &__item {
+        &:not(:last-child) {
+          margin-bottom: 2.0em;
+        }
+      }
+    }
+  }
+}

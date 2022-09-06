@@ -11,54 +11,147 @@
 }
 
 @mixin h1-title() {
-    font-size: 4em;
-    line-height: 1em;
-    font-weight: 700;
-    margin: 0;
-    @include max-media-width($lg) {
-        font-size: 3em;
+    .h1-title, 
+    h1 {
+        font-size: 4em;
+        line-height: 1em;
+        font-weight: 700;
+        margin: 0;
+        @include max-media-width($lg) {
+            font-size: 3em;
+        }
+    
+        @include max-media-width($md) {
+            font-size: 2em;
+        }
+        
+        @content;
     }
-    @include max-media-width($md) {
-        font-size: 2em;
-    }
-    @content;
 }
 
 @mixin h2-title() {
-    margin: 0;
-    font-size: 3em;
-    line-height: 1em;
-    font-weight: 700;
-    @include max-media-width($lg) {
-        font-size: 2em;
+    .h2-title, 
+    h2 {
+        margin: 0;
+        font-size: 3em;
+        line-height: 1.1em;
+        font-weight: 700;
+    
+        @include max-media-width($lg) {
+            font-size: 2em;
+        }
+    
+        @include max-media-width($md) {
+            font-size: 1em;
+        }
+    
+        @content;
     }
-    @include max-media-width($md) {
-        font-size: 1em;
-    }
-    @content;
 }
 
 @mixin h3-title() {
-    margin: 0;
-    font-size: 2em;
-    line-height: 1em;
-    font-weight: 700;
-    @include max-media-width($lg) {
+    .h3-title,
+    h3 {
+        margin: 0;
         font-size: 2em;
+        line-height: 1.3em;
+        font-weight: 700;
+    
+        @include max-media-width($lg) {
+            font-size: 2em;
+        }
+    
+        @include max-media-width($md) {
+            font-size: 1em;
+        }
+    
+        @content;
     }
-    @include max-media-width($md) {
-        font-size: 1em;
-    }
-    @content;
 }
 
 @mixin h4-title() {
-    margin: 0;
-    font-size: 2em;
-    line-height: 1em;
-    font-weight: 700;
-    @include max-media-width($md) {
-        font-size: 2em;
+    .h4-title,
+    h4 {
+        margin: 0;
+        font-size: 1.5em;
+        line-height: 1.2em;
+        font-weight: 700;
+        margin: 0;
+    
+        @content;
     }
+}
+
+@mixin h5-title() {
+    .h5-title,
+    h5 {
+        margin: 0;
+        font-size: 1em;
+        line-height: 1.1em;
+        font-weight: 500;
+        margin: 0;
+    
+        @content;
+    }
+}
+
+@mixin h6-title() {
+    .h6-title,
+    h6 {
+        margin: 0;
+        font-size: .75em;
+        line-height: 1.5em;
+        font-weight: 500;
+        margin: 0;
+    
+        @content;
+    }
+}
+
+@mixin text() {
+    .text,
+    p {
+        font-size: 1em;
+        line-height: 1.3em;
+        margin: 1em 0;
+        @content;
+    }
+}
+
+@mixin list() {
+    .list,
+    ul {
+        list-style: disc;
+        margin: 1em 0;
+        padding-left: 3em;
+        & > li > ul {
+            list-style: circle;
+            padding-left: 2em;
+        }
+
+    }
+}
+
+@mixin glass($color, $filter) {
+    overflow: hidden;
+    position: relative;
+
+    &:after {
+        content: "";
+        background: $color;
+        filter: $filter;
+        width: 100%;
+        height: 100%;
+        display: block;
+        position: absolute;
+        top: 0;
+        left: 0;
+        z-index: 1;
+    }
+
     @content;
+}
+
+@function border($px) {
+    @return $px solid $blue;
 }

@@ -47,7 +47,7 @@ p {
   display: flex;
   align-items: center;
   background: $black;
-  border-bottom: 1px solid $blue;
+  border-bottom: border(1px);
   width: 100%;
   height: $header-height;
   padding: 16px 0;
@@ -58,14 +58,14 @@ p {
 }
 
 main {
-  background: url("../public/images/main-bg-hd.jpg") no-repeat center/cover;
+  background: url("../public/images/main-bg-hd.jpg") no-repeat fixed top center/cover;
   min-height: $dynamic-full-height;
-  padding: 20px 0;
+  padding: $main-gap 0;
   position: relative;
   overflow: hidden;
   @include max-media-width($xl) {
     background: url("../public/images/main-bg-xl.jpg") no-repeat center/cover;
-    min-height: $dynamic-full-height-md;
+    // min-height: $dynamic-full-height-md;
   }
   @include max-media-width($md) {
     background: url("../public/images/main-bg-md.jpg") no-repeat center/cover;
@@ -83,8 +83,40 @@ main {
   }
 }
 
+.content-wrapper {
+  border: border(2px);
+  border-radius: 20px;
+  position: relative;
+  z-index: 2;
+  min-height: calc(100vh - $header-height - $footer-height - $main-gap * 2);
+  @include glass(rgba($blue-dark, 1), blur(270px));
+  @include max-media-width($md) {
+    padding: 40px 20px;
+    min-height: calc(100vh - $header-height-md - $footer-height-md - $main-gap * 2);
+  }
+  &:not(:last-child) {
+    margin-bottom: 20px;
+  }
+
+  .content {
+    padding: 40px;
+    position: relative;
+    z-index: 3;
+    @include max-media-width($md) {
+      padding: 40px 0;
+    }
+    a {
+      color: $white;
+      text-decoration: underline;
+      &:hover {
+        color: $blue;
+      }
+    }
+  }
+}
+
 .footer {
-  border-top: 1px solid $blue;
+  border-top: border(1px);
   background: $black;
   display: flex;
   align-items: center;
@@ -97,6 +129,7 @@ main {
   }
   &__copyright-text {
     color: $blue-dark;
+    font-size: 0.85em;
   }
 }
 
