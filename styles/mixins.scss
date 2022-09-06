@@ -140,6 +140,9 @@
         content: "";
         background: $color;
         filter: $filter;
+        backdrop-filter: $filter;
+        -webkit-filter: $filter;
+        -webkit-backdrop-filter: $filter;
         width: 100%;
         height: 100%;
         display: block;
