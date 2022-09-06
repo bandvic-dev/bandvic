@@ -28,7 +28,8 @@ export function Layout({ children }: Props) {
 		    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
 		    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
-		    <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#ea4335" />
+            <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#ea4335" />
+            <link rel="mask-icon" href="./images/safari-pinned-tab.svg" color="#ea4335" />
             <link rel="manifest" href="./site.webmanifest" />
         </Head>
         {/* <Script src="https://www.googletagmanager.com/gtag/js?id=G-K85V3WXWDV"></Script>

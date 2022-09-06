@@ -5,6 +5,7 @@
 @include h4-title;
 
 .card {
+  background: rgba($blue, .3);
   display: flex;
   gap: 40px;
   border: border(1px);
@@ -21,8 +22,6 @@
     align-items: center;
     padding: 20px;
   }
-
-  @include glass(rgba($blue, .9), blur(250px));
 
   &-wrapper {
     min-height: 580px;

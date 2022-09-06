@@ -58,17 +58,17 @@ p {
 }
 
 main {
-  background: url("../public/images/main-bg-hd.jpg") no-repeat fixed top center/cover;
+  background: url("../public/images/main-bg-hd.jpg") no-repeat fixed bottom 0 center/cover;
   min-height: $dynamic-full-height;
   padding: $main-gap 0;
   position: relative;
   overflow: hidden;
   @include max-media-width($xl) {
-    background: url("../public/images/main-bg-xl.jpg") no-repeat center/cover;
+    background: url("../public/images/main-bg-xl.jpg") no-repeat fixed center/cover;
     // min-height: $dynamic-full-height-md;
   }
   @include max-media-width($md) {
-    background: url("../public/images/main-bg-md.jpg") no-repeat center/cover;
+    background: url("../public/images/main-bg-md.jpg") no-repeat fixed center/cover;
     min-height: $dynamic-full-height-md;
   }
   &:after {
@@ -84,14 +84,14 @@ main {
 }
 
 .content-wrapper {
+  background: rgba($blue, .3);
   border: border(2px);
   border-radius: 20px;
   position: relative;
   z-index: 2;
   min-height: calc(100vh - $header-height - $footer-height - $main-gap * 2);
-  @include glass(rgba($blue-dark, 1), blur(270px));
+  overflow: hidden;
   @include max-media-width($md) {
-    padding: 40px 20px;
     min-height: calc(100vh - $header-height-md - $footer-height-md - $main-gap * 2);
   }
   &:not(:last-child) {
@@ -103,7 +103,7 @@ main {
     position: relative;
     z-index: 3;
     @include max-media-width($md) {
-      padding: 40px 0;
+      padding: 40px 20px;
     }
     a {
       color: $white;

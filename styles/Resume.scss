@@ -24,9 +24,9 @@
     }
   }
   &-sidebar {
+    background: rgba($blue, .3);
     width: 320px;
     padding: 40px;
-    @include glass(rgba($blue, .9), blur(250px));
     @include max-media-width($md) {
       width: 100%;
       padding: 40px 20px;
@@ -37,8 +37,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: relative;
-    z-index: 3;
     &__image {
       width: 200px;
       height: 200px;
@@ -54,6 +52,14 @@
         img {
           transform: scale3d(1.1, 1.1, 1.1);
           transition: all .5s ease;
+        }
+      }
+      @include touch {
+        &:hover {
+          img {
+            transform: scale3d(1, 1, 1);
+            transition: all .5s ease;
+          }
         }
       }
     }
