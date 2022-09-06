@@ -16,15 +16,15 @@ export function Layout({ children }: Props) {
         <Head>
             <link rel="icon" href="favicon.ico" />
             <meta property="og:locale" content="en_US" />
-		    <meta property="og:site_name" content="bandvic.ru" />
+		    <meta property="og:site_name" content="bandvic.vercel.app" />
 		    <meta property="og:type" content="website" />
-		    <meta property="og:url" content="https://bandvic.ru/" />
-		    <meta property="og:title" content="Andrei B" />
+		    <meta property="og:url" content="https://bandvic.vercel.app/" />
+		    <meta property="og:title" content="Andrei Balanco | Front-end Developer" />
 		    <meta property="og:description" content="Front-End Developer" />
 		    <meta property="og:image" content="./images/android-chrome-512x512.png" />
 		    <meta name="twitter:card" content="summary_large_image" />
-		    <meta name="twitter:site" content="@bandvic" />
-		    <meta name="twitter:creator" content="@bandvic" />
+		    <meta name="twitter:site" content="@BandvicDev" />
+		    <meta name="twitter:creator" content="@BandvicDev" />
 		    <link rel="apple-touch-icon" sizes="180x180" href="./images/apple-touch-icon.png" />
 		    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png" />
 		    <link rel="icon" type="image/png" sizes="16x16" href="./images/favicon-16x16.png" />
