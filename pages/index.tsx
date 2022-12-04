@@ -20,7 +20,8 @@ const Home: NextPage = () => {
             <div className="card__content">
               <h1 className="card__title h1-title">Andrei Balanco</h1>
               <p className="card__subtitle h3-title">Front-end Developer</p>
-              <p className="card__text">Good experience in HTML, CSS, SCSS, BEM, Git, Bootstrap, jQuery, Javascript, npm, Pug, Joomla.</p>
+              <p className="card__text">5 years in IT</p>
+              <p className="card__text">Good experience in HTML, CSS, SCSS, BEM, Git, Bootstrap, jQuery, Javascript, npm, Pug, Blade, Joomla.</p>
               <Socials />
             </div>
           </div>

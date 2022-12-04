@@ -38,10 +38,10 @@ export function Resume(props: NextPage) {
                     <strong>Phone:</strong> <Link href="tel:37379907447"><a title="Call me phone or Viber">+37379907447</a></Link>
                   </div>
                   <div className="resume-contact__item">
-                    <strong>Email:</strong> <Link href="mailto:working.web@mail.ru"><a title="Write me message">working.web@mail.ru</a></Link>
+                    <strong>Email:</strong> <Link href="mailto:working.web31@gmail.com"><a title="Write me message">working.web31@gmail.com</a></Link>
                   </div>
                   <div className="resume-contact__item">
-                    <strong>Experience in IT:</strong> 4 years. 9 months
+                    <strong>Experience in IT:</strong> 5 years.
                   </div>
                 </div>
                 <div className="resume-aditional-info">
@@ -86,7 +86,7 @@ export function Resume(props: NextPage) {
                 <p>I`ve read books: Visual CSS - Greg Sidelnikov, Programmer Fanatic - Chad Fowler, Javascript for Professionals - John Resig, Russ Ferguson, John Paxton.</p>
                 <h2 className="h4-title">About me</h2>
                 <p>
-                I’m married, have a child, I’m a decent guy who, before joining IT, managed to work as a tractor driver (2 years old), a laborer at a construction site, a thermal finisher in a sewing shop (3 years old), even a security guard (almost 2 years old), a freelancer (about 4 years developing tourist sites on joomla), programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (4 years 9 months) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company. It was difficult at first, but I overcame the difficulties, because I really love my job. I am also considering remote work. I want to work and travel. I want to develop myself in the frontend, in particular with React and everything related to it. I love to ride a bike. I love music, I <Link href="https://www.youtube.com/channel/UClDuzekDoAGBhYwgPWJ1_6Q"><a target="_blank" title="My youtube chanel">play an instrument</a></Link>.
+                I’m married, have a child, I’m a decent guy who, before joining IT, managed to work as a tractor driver (2 years old), a laborer at a construction site, a thermal finisher in a sewing shop (3 years old), even a security guard (almost 2 years old), a freelancer (about 4 years developing tourist sites on joomla), programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (5 years) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company. It was difficult at first, but I overcame the difficulties, because I really love my job. I am also considering remote work. I want to work and travel. I want to develop myself in the frontend, in particular with React and everything related to it. I love to ride a bike. I love music, I <Link href="https://www.youtube.com/channel/UClDuzekDoAGBhYwgPWJ1_6Q"><a target="_blank" title="My youtube chanel">play an instrument</a></Link>.
                 </p>
               </div>
             </div>
