@@ -41,14 +41,14 @@ export function Resume(props: NextPage) {
                     <strong>Email:</strong> <Link href="mailto:working.web31@gmail.com"><a title="Write me message">working.web31@gmail.com</a></Link>
                   </div>
                   <div className="resume-contact__item">
-                    <strong>Experience in IT:</strong> 5 years.
+                    <strong>Experience in IT:</strong> more 10 years.
                   </div>
                 </div>
                 <div className="resume-aditional-info">
                   <div className="resume-aditional-info__item">
                     <h4 className="h4-title">Good Skills</h4>
                     <p>
-                      HTML, CSS, SCSS, BEM, Git, Bootstrap, jQuery, Javascript, npm, Pug, Blade, Joomla.
+                      HTML, CSS, SCSS, BEM, Git, Bootstrap, jQuery, Javascript, npm, Pug, Blade, Joomla, Wordpress.
                     </p>
                   </div>
                   <div className="resume-aditional-info__item">
@@ -62,7 +62,9 @@ export function Resume(props: NextPage) {
                   <div className="resume-aditional-info__item">
                     <h4 className="h4-title">Courses</h4>
                     <p>
-                      <Link href="https://www.coursera.org/account/accomplishments/certificate/F9LXT7GBCSNK"><a target="_blank" title="Show sertificate">Bootstrap</a></Link>, <Link href="https://www.coursera.org/account/accomplishments/certificate/YFEZHHCMXXUW"><a target="_blank" title="Show sertificate">React</a></Link>.
+                      <Link href="https://www.coursera.org/account/accomplishments/certificate/F9LXT7GBCSNK"><a target="_blank" title="Show sertificate">Bootstrap</a></Link>,&nbsp;
+                      <Link href="https://www.coursera.org/account/accomplishments/certificate/YFEZHHCMXXUW"><a target="_blank" title="Show sertificate">React</a></Link>,&nbsp; 
+                      <Link href="https://drive.google.com/file/d/1iR88_XhaOIhwA1QhexEtgA0ypQkYVDyh/view?usp=share_link"><a target="_blank" title="Show sertificate">English A2</a></Link>.
                     </p>
                   </div>
                   <Socials />
@@ -78,7 +80,7 @@ export function Resume(props: NextPage) {
                 </p>
                 <h4>Languages</h4>
                 <p>
-                  <strong>English:</strong> I can read and understand documentation and articles. Spoken language at a low level due to insufficient experience. A recent test in an online service showed B1 - <Link href="https://drive.google.com/drive/u/1/folders/190zE06mXBJWlB3KsEPbG81lxWjHcJos6"><a target="_blank" title="Online test of level">link to the results</a></Link>. I continue to study English on my own.
+                  <strong>English:</strong> I can read and understand documentation and articles. Spoken language at a low level due to insufficient experience. Recently received A2 <Link href="https://drive.google.com/file/d/1iR88_XhaOIhwA1QhexEtgA0ypQkYVDyh/view?usp=share_link"><a target="_blank" title="Link to my sertificate">certificate</a></Link>. I continue to study English on my own.
                 </p>
                 <p><strong>Romanian:</strong> Elimentary knowledge. I understand Romanian, I can write and read.</p>
                 <p><strong>Russian:</strong> Native language. I can speak, read, write and etc.</p>
@@ -86,7 +88,7 @@ export function Resume(props: NextPage) {
                 <p>I`ve read books: Visual CSS - Greg Sidelnikov, Programmer Fanatic - Chad Fowler, Javascript for Professionals - John Resig, Russ Ferguson, John Paxton.</p>
                 <h2 className="h4-title">About me</h2>
                 <p>
-                I’m married, have a child, I’m a decent guy who, before joining IT, managed to work as a tractor driver (2 years old), a laborer at a construction site, a thermal finisher in a sewing shop (3 years old), even a security guard (almost 2 years old), a freelancer (about 4 years developing tourist sites on joomla), programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (5 years) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company. It was difficult at first, but I overcame the difficulties, because I really love my job. I am also considering remote work. I want to work and travel. I want to develop myself in the frontend, in particular with React and everything related to it. I love to ride a bike. I love music, I <Link href="https://www.youtube.com/channel/UClDuzekDoAGBhYwgPWJ1_6Q"><a target="_blank" title="My youtube chanel">play an instrument</a></Link>.
+                I’m married, have a child, I’m a decent guy who, before joining IT, managed to work as a tractor driver (2 years old), a laborer at a construction site, a thermal finisher in a sewing shop (3 years old), even a security guard (almost 2 years old), a freelancer (about 4 years developing tourist sites on joomla), programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (5 years) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company. It was difficult at first, but I overcame the difficulties, because I really love my job. I am also considering remote work. I want to work and travel. I want to develop myself in the frontend, in particular with React and everything related to it. I love to ride a bike. I love music, I <Link href="https://www.tiktok.com/@andrei_balanco"><a target="_blank" title="My tiktok channel">play an instrument</a></Link>.
                 </p>
               </div>
             </div>
