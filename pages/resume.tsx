@@ -94,7 +94,7 @@ export function Resume(props: NextPage) {
                 </p>
                 <p>Programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (5 years) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company where I worked. It was difficult at first, but I overcame the difficulties, because I really love my job.
                 </p>
-                <p>I'm looking for an interesting remote job with a flexible schedule. I want to work and travel. I want to rise as frontend developer particular with React and everything related to it and may be full stack developer in feature.
+                <p>I’m looking for an interesting remote job with a flexible schedule. I want to work and travel. I want to rise as frontend developer particular with React and everything related to it and may be full stack developer in feature.
                 </p>
                 <p>I love to ride a bike. I love music, I <Link href="https://www.tiktok.com/@andrei_balanco"><a target="_blank" title="My tiktok channel">play an instrument</a></Link> I like to enjoy nature.
                 </p>
