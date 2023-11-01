@@ -55,7 +55,7 @@ export function Resume(props: NextPage) {
                     <h4 className="h4-title">Basic skills</h4>
                     <p>
                       Gulp, Webpack, Node.js, Express.js, React, Next.js, Prisma,
-                      Stripe.js, Photoshop, XD, Figma, Backstop.js, Puppeteer,
+                      Stripe.js, Photoshop, XD, Figma, 
                       Trello, Jira.
                     </p>
                   </div>
@@ -71,6 +71,8 @@ export function Resume(props: NextPage) {
                 </div>
               </div>
               <div className="resume-content content">
+                <h2>The True Resume</h2>
+                <p>I started my IT career as a freelancer without any IT degrees.</p>
                 <h4>Involved in tasks</h4>
                 <p>Creation of emails, landing pages and multi-page sites by layouts of XD. Made guideline pages of site elements. Page speed loading optimization on the front. Writing custom small reusable javascript scripts.</p>
                 <p>Work with forms (customization, validation). Participated in the creation of the application “buying gift discount cards”, where I did the implementation of Stripe.js on the part of front.</p>
@@ -88,7 +90,13 @@ export function Resume(props: NextPage) {
                 <p>I`ve read books: Visual CSS - Greg Sidelnikov, Programmer Fanatic - Chad Fowler, Javascript for Professionals - John Resig, Russ Ferguson, John Paxton.</p>
                 <h2 className="h4-title">About me</h2>
                 <p>
-                I’m married, have a child, I’m a decent guy who, before joining IT, managed to work as a tractor driver (2 years old), a laborer at a construction site, a thermal finisher in a sewing shop (3 years old), even a security guard (almost 2 years old), a freelancer (about 4 years developing tourist sites on joomla), programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (5 years) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company. It was difficult at first, but I overcame the difficulties, because I really love my job. I am also considering remote work. I want to work and travel. I want to develop myself in the frontend, in particular with React and everything related to it. I love to ride a bike. I love music, I <Link href="https://www.tiktok.com/@andrei_balanco"><a target="_blank" title="My tiktok channel">play an instrument</a></Link>.
+                  I’m married, have a child, I’m a decent guy who, before joining IT, managed to work as a tractor driver (2 years old), a laborer at a construction site, a thermal finisher in a sewing shop (3 years old), even a security guard (almost 2 years old), a freelancer (about 4 years developing tourist sites on joomla).
+                </p>
+                <p>Programming was both a hobby and a small income (since 2008). I started doing real programming in 2017 in an IT company as a front-end developer, (5 years) then gradually I got to know all these technologies. At the moment, I have grown to middle by the standards of the company where I worked. It was difficult at first, but I overcame the difficulties, because I really love my job.
+                </p>
+                <p>I'm looking for an interesting remote job with a flexible schedule. I want to work and travel. I want to rise as frontend developer particular with React and everything related to it and may be full stack developer in feature.
+                </p>
+                <p>I love to ride a bike. I love music, I <Link href="https://www.tiktok.com/@andrei_balanco"><a target="_blank" title="My tiktok channel">play an instrument</a></Link> I like to enjoy nature.
                 </p>
               </div>
             </div>
